@@ -7,13 +7,13 @@ Live Demo : https://habbit-tracker-v1.netlify.app/
 
 ## How to Setup project locally
 
-visit the url : https://github.com/Arun-kumar-95/habbit-tracker
+step 1. visit the url : https://github.com/Arun-kumar-95/habbit-tracker
 
-Download the zip file and open with your favourite editior
+step 2. Download the zip file and open with your favourite editior
 
-Use npm install to install all the dependencies
+step 3. Use npm install to install all the dependencies
 
-To start the server use npm start
+step 4. Now To start the server use npm start
 
 ##About Author
 
