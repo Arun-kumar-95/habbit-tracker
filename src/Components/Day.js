@@ -1,10 +1,13 @@
 // DEFINIG THE DAY FUNCTIONAL COMPONENT
 
 const Day = ({ dayData }) => {
+  const month = dayData.mm + 1
+  let date = `${dayData.yyyy}/${month}/${dayData.dd}` 
   // DEFINIGNG THE UI FOR THE DAY COMPONENT
   return (
     <div className="day">
       <h3>{dayData.day}</h3>
+      <h4>{date}</h4>
 
       {/* SHOW TICK ICONK IF THE ISDONE IS TRUE*/}
       {dayData.isDone === true ? (

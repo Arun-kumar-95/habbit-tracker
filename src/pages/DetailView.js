@@ -38,7 +38,7 @@ const DetailView = ({ day }) => {
   //GET THE CURRENT DATA BASED ON THE ID
   const currentData = habbit.weekLog[todayDay];
   // GET THE CURRENT DATE
-  const todaysDate = `${currentData.yyyy}/${currentData.mm}/${currentData.dd}`;
+  const todaysDate =  new Date().toJSON().slice(0, 10);
 
   // function call after click done icon--------------
   const markToDone = () => {
