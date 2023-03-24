@@ -1,0 +1,243 @@
+.App{
+    position:relative;
+    width: 100%;
+}
+
+/* === HEADER  === */
+
+header{
+    width:96%;
+    margin:auto;
+    padding:1.8em 0;
+}
+
+/* === NAVIGATION === */
+nav{
+    width: 100%;   
+}
+
+nav ul{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+}
+
+nav li{
+    display:inline-block;
+}
+
+nav li:nth-child(1) > a{
+    font-size: 2.4rem;
+    font-weight:800;
+    letter-spacing: 0.8px;
+    color: var(--clr-light-blue);
+}
+
+nav li:nth-child(2){
+    margin-left:auto;
+    margin-right:1.5em;
+}
+
+
+nav li[role=link]  > a{
+  padding:0.65rem 1.1rem;
+  text-align: center;
+  display:inline-block;
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+}
+
+
+nav li:nth-child(2) > a{
+    outline: 1px solid var(--clr-bg-light);
+}
+
+nav li:nth-child(3) > a{
+    background-color: var( --clr-light-green);
+}
+ 
+nav li[role=link]  > a:hover{
+    transition: background-color  300ms ease-in;
+    -webkit-transition: background-color  300ms ease-in;
+    -moz-transition: background-color  300ms ease-in;
+    -ms-transition: background-color  300ms ease-in;
+    -o-transition: background-color  300ms ease-in;
+    background-color: var( --clr-bg-light);
+}
+
+nav li:nth-child(3) > a:hover{
+    background: transparent;
+    outline:1px solid var(--clr-light-blue);
+}
+
+
+/* === MAIN == */
+
+main h1{
+    margin-top:1.8em;
+    text-align: center;
+    color: var(--clr-white);
+    font-weight:800;
+    font-size: 4rem;
+    line-height:1.25;
+}
+
+h1 span.text-block{
+    display:block;
+}
+
+h1 span.text-color{
+    color: var(--clr-light-blue);
+}
+
+main p{
+    font-size: 1.6rem;
+    font-weight:400;
+    text-align: center;
+    margin-top:2em;
+    color: rgba(255, 255, 255, 0.6);
+    padding:0 4%;
+    line-height: 1.4;
+}
+main button{
+    text-align:center;
+}
+
+
+
+
+/* === HABBIT == */
+
+div.habbit-container{
+    padding:0 2%;
+    margin-top:3em;
+}
+
+div.habbit-container div.empty-habbit-msg{
+    text-align: center;
+}
+
+div.habbit-container p{
+    color: rgb(248, 196, 196);
+    font-weight: 700;
+    font-size: 2rem;
+    display: inline-block;
+    border-bottom:1px solid rgba(255, 255, 255, 0.5);
+    margin-top:3em;
+    padding:0;
+}
+
+ 
+div.habbit-container li{
+    outline:1px solid var(--clr-light-blue);
+    padding:1.2rem 0.5rem;
+    margin-bottom:1.8em;
+    background-color: rgba(28, 36, 48, 0.4);
+    border-radius: 0.5rem;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    -o-border-radius: 0.5rem;
+}
+
+div.habbit-container div.habbit{
+    width: 100%;
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+div.habbit-container div.habbit h2{
+    color: var(--clr-white);
+    font-size: 1.8rem;
+    font-weight:400;
+    margin-left:1em;
+}
+
+div.habbit-container a{
+    margin-left:auto;
+    font-size: 1.3rem;
+}
+div.habbit-container a.view-habbit{
+  
+    background-color: rgba(255 , 255 , 255 ,0.9);
+    display:inline-flex;
+    align-items: center;
+    padding:0.3rem 1rem;
+    color: #121212;
+    border-radius: 0.35rem;
+    -webkit-border-radius: 0.35rem;
+    -moz-border-radius: 0.35rem;
+    -ms-border-radius: 0.35rem;
+    -o-border-radius: 0.35rem;
+}
+a.view-habbit img{
+     width:2.2rem;
+     height: 2.2rem;
+     display: inline-block;
+     margin-right:0.5em;
+     margin-top:0.75em;
+}
+
+a.view-habbit span{
+    vertical-align: middle;
+} 
+
+
+div.habbit-container button.btnDelete{
+    margin:0;
+    background: transparent;
+    min-width: 4.8rem;
+    margin-left:2em;
+    margin-right:0.75em;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding:0.75rem;
+}
+
+div.habbit-container button.btnDelete:hover,
+div.habbit-container button.btnDelete:focus{
+    background-color: rgba(255 , 255 , 255 ,0.9);
+}
+
+img.delete-icon{
+    width: 2rem;
+    height: 2rem;
+    margin:0 auto;
+}
+
+@media only screen and (min-width: 768px){
+
+    nav li:nth-child(1) > a{
+        font-size: 2.6rem;
+    }
+
+
+    main h1{
+        font-weight:800;
+        font-size: 4.8rem;
+    }
+    main p{
+        font-size: 1.8rem;
+        font-weight:400;
+    }
+
+    nav li[role=link]  > a{
+        padding:0.8rem 1.35rem;
+      }
+}
+
+@media only screen and (min-width: 961px){
+    nav li:nth-child(1) > a{
+        font-size: 2.8rem;
+    }
+
+
+    main h1{
+        font-size: 6rem;
+    }   
+}

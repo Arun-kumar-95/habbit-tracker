@@ -1,0 +1,77 @@
+/* === ROOT === */
+:root{
+   --min-height:100vh;
+   --min-weight:320px;
+   
+   /* === TYPOGRAPHY AND FONT SIZE ===  */
+   --font-base: 62.5% !important;
+   --font-fmly: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+   
+   
+   /* === COLORS ===  */
+
+   --clr-bg: #252F3F;
+   --clr-bg-light:#6B7280;
+   --clr-light-blue:#8DA2FB;
+   --clr-light-green:#43a8af;
+   --clr-white: #fff;
+
+
+}
+
+/* === REMOVING THE MARGIN AND PADDING  === */
+* , *::before , *::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+}
+
+/* === HTML  === */
+
+html{
+    scroll-behavior: smooth;
+    font-size: var(--font-base);
+}
+
+/* === A AMD P === */
+a , p {
+    font-size: 1.3rem;
+    color: var(--clr-white);
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style-type: none;
+}
+
+
+input , button {
+    font-family: inherit;
+}
+
+button , input{
+    border:none;
+    outline:none;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+img{
+    max-width: 100%;
+    display:block;
+}
+
+/* === BODY MARKUP ===  */
+body{
+    min-height: var(--min-height);
+    min-width: var(--min-width);
+    max-width: 100%;
+    background-color: var(--clr-bg);
+    font-size: 1.2rem;  
+    font-family:  var(--font-fmly);
+}

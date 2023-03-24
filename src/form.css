@@ -1,0 +1,75 @@
+/* ==  FORM MARKUP===  */
+
+main form{
+ outline:1px solid var(--clr-light-blue);
+ max-width:450px;
+ margin:auto;
+ margin-top:6em;
+ padding:0.75rem 1.75rem;
+ border-radius: 0.25rem;
+ -webkit-border-radius: 0.25rem;
+ -moz-border-radius: 0.25rem;
+ -ms-border-radius: 0.25rem;
+ -o-border-radius: 0.25rem;
+ background-color: rgba(0, 0, 0, 0.2);
+}
+
+
+main label {
+    display:block;
+    color: var(--clr-white);
+    font-size: 1.35rem;
+    margin-bottom:1em;
+    margin-top:0.75em;
+}
+
+/* === INPUT MAKKUP == */
+main input{
+ padding:0.7rem 0.5rem;
+ width: 100%;
+ margin-bottom:2.2em;
+ font-size: 1.25rem;
+ border-radius: 0.125rem;
+ -webkit-border-radius: 0.125rem;
+ -moz-border-radius: 0.125rem;
+ -ms-border-radius: 0.125rem;
+ -o-border-radius: 0.125rem;
+
+ background-color: rgba(255 , 255 , 255 ,0.9);
+}
+
+main input:focus{
+    background-color: var(--clr-white);
+
+}
+/* === MARKUP FOR THE BUTTON === */
+
+main button{
+    display:inline-block;
+    min-width: 90px;
+    padding:0.6rem 0.75rem;
+    margin-right:1.2em;
+    margin-bottom:2em;
+    border-radius: 0.35rem;
+    -webkit-border-radius: 0.35rem;
+    -moz-border-radius: 0.35rem;
+    -ms-border-radius: 0.35rem;
+    -o-border-radius: 0.35rem;
+}
+
+main button[type="button"] {
+    background: transparent;
+    outline:1px solid ;
+    color: var(--clr-white);
+
+}
+main button[type="submit"] {
+    background-color: var(--clr-light-blue);
+    color: rgba(255 , 255 , 255 ,0.9)
+}
+
+main button:hover{
+    background-color: var(--clr-light-green);
+    outline:none;
+}
+ 
